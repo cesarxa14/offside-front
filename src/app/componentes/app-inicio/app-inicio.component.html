@@ -1,0 +1,17 @@
+<div>
+    <h2>Inicio</h2>
+</div>
+
+<div class="container border">
+    <div class="tarjeta" *ngFor="let new of noticiasLista">
+        <mat-card>
+            <mat-card-content>
+                <img class="foto-noticia" src="https://tmssl.akamaized.net/images/foto/normal/lionel-messi-ballon-dor-2019-1592819026-41968.jpg" alt="">
+                <h1>{{new.titulo}}</h1>
+                <h5>{{new.subtitulo}}</h5>
+                <p>{{new.cuerpo_noticia}}</p>
+                <button>Like o borrar</button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
