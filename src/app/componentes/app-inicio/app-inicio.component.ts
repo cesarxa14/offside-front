@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import { Component, OnInit, Input} from '@angular/core';
 import { AppServiceService} from '../../servicios/appService/app-service.service';
 import { ModalAbrirNoticiaComponent} from '../modal-abrir-noticia/modal-abrir-noticia.component'
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 
+=======
+import { Component, OnInit } from '@angular/core';
+import { AppServiceService} from '../../servicios/appService/app-service.service'
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
 
 @Component({
   selector: 'app-app-inicio',
@@ -12,6 +17,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 })
 export class AppInicioComponent implements OnInit {
 
+<<<<<<< HEAD
   @Input() todos: any;
   metadata: any = localStorage.getItem('metadata');
   color_like:any = [];
@@ -81,6 +87,15 @@ export class AppInicioComponent implements OnInit {
         this.color_guardar[index] = 'white'
       }
       elem.favorito = !elem.favorito
+=======
+  noticiasLista:any = [];
+  constructor(private AppService: AppServiceService) { }
+
+  ngOnInit() {
+    this.AppService.getAllNoticias().subscribe(res=>{
+      console.log('trajo nada', res)
+      this.noticiasLista = res;
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
     })
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {FormBuilder, FormGroup, Validator, FormControl, Validators, ReactiveFormsModule} from '@angular/forms';
 import {AuthService} from '../../../servicios/authService/auth.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
@@ -6,6 +7,8 @@ import { AppServiceService} from '../../../servicios/appService/app-service.serv
 import { Router} from '@angular/router';
 
 // import {} from ''
+=======
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
 
 @Component({
   selector: 'app-login',
@@ -14,6 +17,7 @@ import { Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+<<<<<<< HEAD
   loginForm: FormGroup;
   invalidForm:boolean;
   constructor(private _formBuilder : FormBuilder,
@@ -58,6 +62,11 @@ export class LoginComponent implements OnInit {
     }, err =>{
       // console.log(err)
     })
+=======
+  constructor() { }
+
+  ngOnInit() {
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
   }
 
 }

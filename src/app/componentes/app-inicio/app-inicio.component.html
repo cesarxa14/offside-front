@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="container border">
     <div class="tarjeta" *ngFor="let new of noticiasLista; let i = index">
@@ -16,6 +17,21 @@
                     <span class="material-icons" [ngStyle]="{'color':color_guardar[i]}" style="margin-left:5px"> favorite </span>
                 </button>
                 
+=======
+<div>
+    <h2>Inicio</h2>
+</div>
+
+<div class="container border">
+    <div class="tarjeta" *ngFor="let new of noticiasLista">
+        <mat-card>
+            <mat-card-content>
+                <img class="foto-noticia" src="https://tmssl.akamaized.net/images/foto/normal/lionel-messi-ballon-dor-2019-1592819026-41968.jpg" alt="">
+                <h1>{{new.titulo}}</h1>
+                <h5>{{new.subtitulo}}</h5>
+                <p>{{new.cuerpo_noticia}}</p>
+                <button>Like o borrar</button>
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
             </mat-card-content>
         </mat-card>
     </div>

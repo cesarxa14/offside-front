@@ -4,6 +4,7 @@
 }
 
 .tarjeta{
+<<<<<<< HEAD
     margin-left: 10px;
     width: 350px;
     /* height: 800px; */
@@ -12,11 +13,20 @@
     margin-bottom: 10px;
     
     
+=======
+    border: 2px solid red;
+    margin-left: 10px;
+    width: 350px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
 }
 
 .foto-noticia{
     width: 300px;
     height: 300px;
+<<<<<<< HEAD
     cursor: pointer;
 }
 .ellipsis{
@@ -41,5 +51,7 @@ mat-card-content{
     border-radius: 2%;
     background-color:teal;
     color: white;
+=======
+>>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
 }
 
