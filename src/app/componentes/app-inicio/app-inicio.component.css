@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.tarjeta{
+    margin-left: 10px;
+    width: 350px;
+    /* height: 800px; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.foto-noticia{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.ellipsis{
+    width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.tag{
+    padding: 3px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5%;
+    background-color:darkgrey;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+mat-card-content{
+    border-radius: 2%;
+    background-color:teal;
+    color: white;
+}
+

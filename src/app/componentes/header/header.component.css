@@ -1,0 +1,11 @@
+.header-titulo{
+    margin-top: 5px;
+    text-align: start;
+    background-color: teal;
+    
+}
+
+.header-titulo h1{
+    color: white;
+    margin-left: 50px;
+}

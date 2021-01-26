@@ -1,0 +1,22 @@
+
+<div class="container border">
+    <div class="tarjeta" *ngFor="let new of noticiasLista; let i = index">
+        <mat-card>
+            <mat-card-content>
+                <div class="tag">
+                    <p>{{new.desc_tag}}</p>
+                </div>
+                <img (click)="abrirNoticia(new)"  class="foto-noticia mt-2" src="http://localhost:3000/upload/{{new.foto_noticia}}" alt="" matTooltip="Abrir Noticia" matTooltipPosition="above"> 
+                <h4 class="">{{new.titulo}}</h4>
+                <h6 class="ellipsis" [matTooltip]="new.subtitulo"> <i> {{new.subtitulo}}</i></h6>
+                <button (click)="like(new, i)" mat-raised-button color=primary [matBadge]="new.cantidad_likes" matBadgePosition="before" matBadgeColor="warn">
+                    <span class="material-icons" [ngStyle]="{'color':color_like[i]}" style="margin-left:5px;" > thumb_up </span>
+                </button>
+                <button (click)="guardar(new, i)"  mat-raised-button color=primary  style="margin-left:5px">
+                    <span class="material-icons" [ngStyle]="{'color':color_guardar[i]}" style="margin-left:5px"> favorite </span>
+                </button>
+                
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

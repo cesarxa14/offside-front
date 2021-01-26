@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="tabs">
+    <mat-tab-group mat-align-tabs='center'>
+        <mat-tab label="Inicio">
+            <app-app-inicio [todos]="todasNoticias.todos"></app-app-inicio>
+        </mat-tab>
+        <mat-tab label="Futbol Peruano">
+            <app-app-inicio [todos]="todasNoticias.fut_peruano"></app-app-inicio>
+        </mat-tab>
+        <mat-tab label="Champions">
+            <app-app-inicio [todos]="todasNoticias.champions"></app-app-inicio>
+        </mat-tab>
+        <mat-tab label="Premier League">
+            <app-app-inicio [todos]="todasNoticias.premier"></app-app-inicio>
+        </mat-tab>
+        <mat-tab label="La Liga">
+            <app-app-inicio [todos]="todasNoticias.laliga"></app-app-inicio>
+        </mat-tab>
+        <mat-tab label="Seria A">
+            <app-app-inicio [todos]="todasNoticias.seriaA"></app-app-inicio>
+        </mat-tab>
+    </mat-tab-group>
+</div>

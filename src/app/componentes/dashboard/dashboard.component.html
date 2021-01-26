@@ -1,0 +1,73 @@
+<app-header></app-header>
+
+<mat-toolbar>
+    <span>{{nombre_titulo}}</span>
+    <span style="margin-left:75%" matTooltip="Agregar noticia">
+        <button (click)="agregarNoticiaModal()" mat-mini-fab color=primary ><span class="material-icons"> add</span></button>
+    </span>
+</mat-toolbar>
+
+<div class="table-dashboard border">
+    <mat-progress-bar *ngIf="progress_bar" mode="query"></mat-progress-bar>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="foto_noticia">
+          <th mat-header-cell *matHeaderCellDef> Foto </th>
+          <td mat-cell *matCellDef="let element"> <img class="foto-noti" src="http://localhost:3000/upload/{{element.foto_noticia}}" alt=""> </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="titulo">
+          <th mat-header-cell *matHeaderCellDef> Titulo </th>
+          <td mat-cell *matCellDef="let element" [matTooltip]="element.titulo"> <p class="ellipsis"> <b >{{element.titulo}}</b></p></td>
+        </ng-container>
+      
+        <ng-container matColumnDef="subtitulo">
+          <th mat-header-cell *matHeaderCellDef> Subtitulo </th>
+          <td mat-cell *matCellDef="let element"> <p class="ellipsis">{{element.subtitulo}}</p>  </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="desc_tag">
+          <th mat-header-cell *matHeaderCellDef> Tag </th>
+          <td mat-cell *matCellDef="let element"> {{element.desc_tag}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="editar">
+            <th mat-header-cell *matHeaderCellDef> Editar </th>
+            <td mat-cell *matCellDef="let element"> 
+                <button (click)="editarNoticiaModal(element)" mat-raised-button color=primary >
+                    <span class="material-icons" style="margin-left:5px;" > create </span>
+                </button>
+            </td>
+          </ng-container>
+
+        <ng-container matColumnDef="eliminar">
+        <th mat-header-cell *matHeaderCellDef> Eliminar </th>
+        <td mat-cell *matCellDef="let element; let i = index;">
+            <button (click)="eliminarNoticiaModal(element, i)"  mat-raised-button color=warn >
+                <span class="material-icons" style="margin-left:5px;" > delete </span>
+            </button>
+        </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+</div>
+<!-- <div class="contenedor border">
+    <div>
+        <mat-tab-group mat-align-tabs='center'>
+            <mat-tab label="Crear">
+                <app-crear-noticia></app-crear-noticia>
+            </mat-tab>
+            <mat-tab label="Editar">
+                
+            </mat-tab>
+            <mat-tab label="Eliminar">
+                
+            </mat-tab>
+           
+        </mat-tab-group>
+    </div>
+
+</div> -->
