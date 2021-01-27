@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, Output, EventEmitter } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { AppServiceService} from '../../servicios/appService/app-service.service';
+import { AppServiceService} from '../../servicios/app-service.service';
 
 @Component({
   selector: 'app-modal-confirmacion',

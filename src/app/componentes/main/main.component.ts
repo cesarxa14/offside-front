@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-import { AppServiceService} from '../../servicios/appService/app-service.service';
+import { AppServiceService} from '../../servicios/app-service.service';
 import { HttpParams, HttpErrorResponse } from '@angular/common/http';
-=======
->>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
 
 @Component({
   selector: 'app-main',
@@ -12,7 +9,6 @@ import { HttpParams, HttpErrorResponse } from '@angular/common/http';
 })
 export class MainComponent implements OnInit {
 
-<<<<<<< HEAD
   metadata: any = localStorage.getItem('metadata')
   todasNoticias: any = {
     todos: [],
@@ -38,11 +34,6 @@ export class MainComponent implements OnInit {
       
       // this.noticiasLista = res.todos;
     })
-=======
-  constructor() { }
-
-  ngOnInit() {
->>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
   }
 
 }

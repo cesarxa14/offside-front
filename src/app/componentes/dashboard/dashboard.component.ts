@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppServiceService} from '../../servicios/appService/app-service.service';
+import { AppServiceService} from '../../servicios/app-service.service';
 import { HttpParams, HttpErrorResponse } from '@angular/common/http';
 import {CrearNoticiaComponent } from '../crear-noticia/crear-noticia.component';
 import { EditarNoticiaComponent} from '../editar-noticia/editar-noticia.component'

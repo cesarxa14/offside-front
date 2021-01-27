@@ -1,19 +1,11 @@
 .header-titulo{
     margin-top: 5px;
-<<<<<<< HEAD
     text-align: start;
     background-color: teal;
-=======
-    text-align: center;
-    background-color: gray;
->>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
     
 }
 
 .header-titulo h1{
     color: white;
-<<<<<<< HEAD
     margin-left: 50px;
-=======
->>>>>>> dca4b9529326ee659130c1050a5c3fc2edf1cb60
 }

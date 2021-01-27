@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject, Output, EventEmitter} from '@angular/core';
-import { AppServiceService} from '../../servicios/appService/app-service.service';
+import { AppServiceService} from '../../servicios/app-service.service';
 import {FormBuilder, FormGroup, Validator, FormControl, Validators, ReactiveFormsModule} from '@angular/forms';
 import { HttpParams } from '@angular/common/http';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
